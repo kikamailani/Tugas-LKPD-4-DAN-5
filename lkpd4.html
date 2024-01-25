@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Menghitung soal no 1 
+    //let PABP = 70;
+    //let Math = 82;
+    //let DPK = 77;
+    //let nilaiakhir = (PABP + Math + DPK) / 3 ;
+    //console.log(nilaiakhir)
+
+       //if(nilaiakhir >= 80 && nilaiakhir <=100){
+           //grade = "A"
+       //}else if(nilaiakhir >= 75 && nilaiakhir <= 79){
+           //grade = "B"
+       //}else if(nilaiakhir >= 65 && nilaiakhir <= 74){
+           //grade = "C"
+      // }else if(nilaiakhir >= 45 && nilaiakhir <= 64){
+          // grade = "D"
+      // }else if(nilaiakhir >= 0 && nilaiakhir <= 44){
+           //grade = "E"
+      // }else {
+       // grade = "K  ~~~~    `~"
+      // }
+       //console.log(nilaiakhir)
+      // console.log(grade)
+
+       //Menghitung soal no 2
+
+        let gddmmyyyynn = 225051977803;
+        let golongan = Math.floor (gddmmyyyynn/ 10000000000 % 10);
+        let tanggal = Math.floor (gddmmyyyynn/ 100000000 % 100);
+        let bulan = Math.floor (gddmmyyyynn/ 10000000000 % 100);
+        let tahun = Math.floor (gddmmyyyynn/ 100 % 1000);
+        let kodeind = Math.floor (gddmmyyyynn % 10);
+        switch ( bulan ) {
+            case 1 : 
+                bulan = "Januari"
+                break;
+            case 2 :
+                bulan = "Februari"
+                break;
+            case 3:
+                bulan = "Maret"
+                break;
+            case 4:
+                bulan = "April"
+                break;
+            case 5:
+                bulan= "Mei"
+                break;
+            case 6:
+                bulan= "Juni"
+                break;
+            case 7:
+                bulan = "July"
+                break;  
+            case 8 : 
+                bulan = "Agustus"
+                break;
+            case 9:
+                bulan = "september"
+                break;
+            case 10:
+                bulan = "Oktober"
+                break;
+            case 11:
+                bulan = "November"
+                break;
+            case 12:
+                bulan = "Desember"
+                break;    
+            
+        }
+        if (golongan >=1 && golongan <=4){
+            document.write ("NO. golongan :"+ golongan,"</br>","Tanggal lahir :"+ tanggal,"</br>","Bulan :" + bulan,"</br>","Tahun :" + tahun,"</br>", "Kodeind :" + kodeind)
+        }else {
+            document.write ("document tidak valid")
+        }
+
+        // soal no 3 
+        let jam = 22;
+        let menit = 59;
+        let detik = 59 ;
+
+        let totaldetik = (jam * 3600) + (menit * 60) + (detik) + (1)
+
+        jam = Math.floor (totaldetik /3600 )
+        menit = Math.floor (totaldetik & 3600/60)
+        detik = totaldetik % 60
+    
+        console.log (jam,menit,detik)
+        
+
+    </script>
+    
+</body>
+</html>
